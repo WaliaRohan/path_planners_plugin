@@ -1,5 +1,5 @@
  #include <pluginlib/class_list_macros.h>
- #include "global_planners/rrt_star.h"
+ #include "bfs.h"
 
  //register this planner as a BaseGlobalPlanner plugin
  PLUGINLIB_EXPORT_CLASS(global_planner::GlobalPlanner, nav_core::BaseGlobalPlanner)

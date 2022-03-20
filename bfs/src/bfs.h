@@ -1,4 +1,10 @@
- /* Libraries for global path planner interface */
+//Official resources -
+//http://wiki.ros.org/navigation/Tutorials/Writing%20A%20Global%20Path%20Planner%20As%20Plugin%20in%20ROS
+//https://www.youtube.com/watch?v=We1gGDXAO_o&list=PL93n88K6Qpb63pyaaPaOTudQB30Z2Qn4r
+
+
+/** include the libraries you need in your planner here */
+ /** for global path planner interface */
  #include <ros/ros.h>
  #include <costmap_2d/costmap_2d_ros.h>
  #include <costmap_2d/costmap_2d.h>
@@ -21,7 +27,7 @@
   GlobalPlanner();
   GlobalPlanner(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
 
-  /* overridden functions from interface nav_core::BaseGlobalPlanner */
+  /** overridden classes from interface nav_core::BaseGlobalPlanner **/
   void initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
   bool makePlan(const geometry_msgs::PoseStamped& start,
                 const geometry_msgs::PoseStamped& goal,
