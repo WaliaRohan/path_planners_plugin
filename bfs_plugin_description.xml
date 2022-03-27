@@ -1,0 +1,5 @@
+<library path="lib/libglobal_planner_lib">
+    <class name="global_planner/BFS" type="global_planner::BFSGlobalPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+        <description>This library implements custom global planners.</description>
+    </class>
+</library>

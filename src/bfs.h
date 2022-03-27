@@ -16,16 +16,16 @@
 
  using std::string;
 
- #ifndef GLOBAL_PLANNER_CPP
- #define GLOBAL_PLANNER_CPP
+ #ifndef BFS_PLANNER_CPP
+ #define BFS_PLANNER_CPP
 
  namespace global_planner {
 
- class GlobalPlanner : public nav_core::BaseGlobalPlanner {
+ class BFSGlobalPlanner : public nav_core::BaseGlobalPlanner {
  public:
 
-  GlobalPlanner();
-  GlobalPlanner(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
+  BFSGlobalPlanner();
+  BFSGlobalPlanner(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
 
   /** overridden classes from interface nav_core::BaseGlobalPlanner **/
   void initialize(std::string name, costmap_2d::Costmap2DROS* costmap_ros);
